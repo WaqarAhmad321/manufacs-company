@@ -91,10 +91,10 @@ const HeroSection = () => {
               duration: 0.9,
               ease: "easeIn",
             }}
-            src="/public/Home-Hero-Video.mp4"
-            // autoPlay
+            src="/Home-Hero-Video.mp4"
+            autoPlay
             muted
-            // loop
+            loop
             className="w-[87.5rem mx-auto mt-24 rounded-2xl lg:mt-12 lg:h-[40rem]"
           ></MotionVideo>
           {/* <BorderBeam /> */}
