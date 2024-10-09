@@ -5,12 +5,11 @@ import Label from "./ui/label";
 import Input from "./ui/input";
 import { GridPattern } from "./ui/dot-pattern";
 import { cn } from "@/lib/utils";
-import { Spotlight } from "./ui/spotlight-effect";
 
 const ContactForm = () => {
   const ref = useRef<HTMLFormElement>(null);
   return (
-    <div className="border-2 relative rounded-2xl px-8 py-8">
+    <div className="relative rounded-2xl border-2 px-8 py-8 shadow-lg">
       <GridPattern
         squares={[
           [4, 4],
@@ -100,9 +99,9 @@ const ContactForm = () => {
           </Label>
           <textarea
             required
-            id="message"
+            id="senderMessage"
             placeholder="Type your message here."
-            className="font-manrope rounded-md border p-2 text-base text-black outline-none"
+            className="rounded-md border p-2 font-manrope text-base text-black outline-none"
             rows={5}
             maxLength={500}
           />
@@ -110,7 +109,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="bg-brand w-max px-4 font-manrope rounded-md py-2 font-bold text-white"
+          className="w-max rounded-md bg-brand px-4 py-2 font-manrope font-bold text-white"
         >
           Send Message
         </button>

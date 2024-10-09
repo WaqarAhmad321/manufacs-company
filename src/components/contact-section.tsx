@@ -14,10 +14,10 @@ const ContactSection = () => {
           </h3>
 
           <p className="font-manrope text-lg text-black">
-            Contact us and let us know how we can help you.
+            Let us know how we can help you.
           </p>
 
-          <Image src={WorldImage} className="fill-black" alt="World image" />
+          <Image src={WorldImage} className="fill-black mt-12" alt="World image" />
           {/* <OrbitingCirclesDemo /> */}
         </div>
 

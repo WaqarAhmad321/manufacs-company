@@ -92,7 +92,7 @@ const Company: React.FC<CompanyProps> = ({ company }, index) => {
 
 const Companies = () => {
   return (
-    <div className="relative flex h-[200px] md:h-[500px] w-full flex-col items-center justify-center overflow-hidden bg-white pt-12 md:pt-60">
+    <div className="relative flex h-[200px] md:h-[500px] w-full flex-col items-center justify-center overflow-hidden bg-white pt-12 md:pt-60 md:pb-24">
       <Marquee className="[--duration:20s]">
         {companyImages.slice(0, 4).map((company, index) => (
           <Company key={index} company={company} index={index} />
