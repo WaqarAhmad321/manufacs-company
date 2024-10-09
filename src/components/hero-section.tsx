@@ -14,7 +14,7 @@ const HeroSection = () => {
             opacity: 0,
             y: 100,
           }}
-          
+
           animate={{
             opacity: 1,
             y: 0,
@@ -91,7 +91,7 @@ const HeroSection = () => {
               duration: 0.9,
               ease: "easeIn",
             }}
-            src="/Home-Hero-Video.webm"
+            src="/public/Home-Hero-Video.mp4"
             // autoPlay
             muted
             // loop
