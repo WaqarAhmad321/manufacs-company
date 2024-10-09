@@ -7,7 +7,7 @@ import Image from "next/image";
 const ContactSection = () => {
   return (
     <section className="bg-white py-60">
-      <div className="container flex gap-12">
+      <div className="container flex lg:flex-row flex-col gap-12">
         <div className="w-full lg:w-1/2 flex gap-8 flex-col justify-start items-start">
           <h3 className="font-lexend bg-gradient-to-r from-brand to-brand-dark bg-clip-text text-transparent text-4xl font-bold md:text-6xl lg:text-8xl text-brand-dark">
             Contact us

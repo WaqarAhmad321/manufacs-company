@@ -99,7 +99,7 @@ const HeroSection = () => {
             // autoPlay
             muted
             // loop
-            className="w-[87.5rem mx-auto mt-12 rounded-xl lg:h-[40rem]"
+            className="w-[87.5rem mx-auto mt-24 lg:mt-12 rounded-xl lg:h-[40rem]"
           ></motion.video>
         </div>
       </div>
