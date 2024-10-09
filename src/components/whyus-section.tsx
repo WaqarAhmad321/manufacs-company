@@ -28,7 +28,7 @@ const reasons = [
 
 const WhyUsSection = () => {
   return (
-    <section className="py-36">
+    <section className="bg-[#f7f6fd] py-36">
       <div className="flex flex-col items-center">
         <h2 className="section-heading">
           Why choose us?

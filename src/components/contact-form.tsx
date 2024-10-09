@@ -1,37 +1,50 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useMemo } from "react";
 import Label from "./ui/label";
 import Input from "./ui/input";
 import { GridPattern } from "./ui/dot-pattern";
 import { cn } from "@/lib/utils";
 import { Spotlight } from "./ui/spotlight-effect";
 
+// Memoize the GridPattern component
+const MemoizedGridPattern = React.memo(GridPattern);
+
 const ContactForm = () => {
   const ref = useRef<HTMLFormElement>(null);
+
+  // Memoize the squares array and className string
+  const squares = useMemo(
+    () => [
+      [4, 4],
+      [5, 1],
+      [8, 2],
+      [5, 3],
+      [5, 5],
+      [10, 10],
+      [12, 15],
+      [15, 10],
+      [10, 15],
+      [15, 10],
+      [10, 15],
+      [15, 10],
+    ],
+    [],
+  );
+
+  const gridPatternClassName = useMemo(
+    () =>
+      cn(
+        "absolute left-0 top-0 -z-10 size-[400px]",
+        "[mask-image:radial-gradient(400px_circle_at_center,white,transparent)]",
+        "skew-y-12",
+      ),
+    [],
+  );
+
   return (
-    <div className="bg-brand-dark/90 relative rounded-2xl px-8 py-8">
-      <GridPattern
-        squares={[
-          [4, 4],
-          [5, 1],
-          [8, 2],
-          [5, 3],
-          [5, 5],
-          [10, 10],
-          [12, 15],
-          [15, 10],
-          [10, 15],
-          [15, 10],
-          [10, 15],
-          [15, 10],
-        ]}
-        className={cn(
-          "absolute left-0 top-0 -z-10 size-[400px]",
-          "[mask-image:radial-gradient(400px_circle_at_center,white,transparent)]",
-          "skew-y-12",
-        )}
-      />
+    <div className="relative rounded-2xl bg-brand-dar/90 border-2 !text-black px-8 py-8">
+      <MemoizedGridPattern squares={squares} className={gridPatternClassName} />
 
       <form
         ref={ref}
@@ -102,7 +115,7 @@ const ContactForm = () => {
             required
             id="message"
             placeholder="Type your message here."
-            className="font-manrope rounded-md border p-2 text-base text-black outline-none"
+            className="rounded-md border p-2 font-manrope text-base text-black outline-none"
             rows={5}
             maxLength={500}
           />
@@ -110,7 +123,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="bg-brand w-max px-4 font-manrope rounded-md py-2 font-bold text-white"
+          className="w-max rounded-md bg-brand px-4 py-2 font-manrope font-bold text-white"
         >
           Send Message
         </button>

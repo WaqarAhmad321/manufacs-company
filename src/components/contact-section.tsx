@@ -6,14 +6,16 @@ import Image from "next/image";
 
 const ContactSection = () => {
   return (
-    <section className="bg-white pt-44">
-      <div className="container flex lg:flex-row flex-col gap-12">
-        <div className="w-full lg:w-1/2 flex gap-8 flex-col justify-start items-start">
-          <h3 className="font-lexend text-heading text-4xl font-bold md:text-6xl lg:text-8xl text-brand-dark">
+    <section className="bg-white py-24">
+      <div className="container flex flex-col gap-12 lg:flex-row">
+        <div className="flex w-full flex-col items-start justify-start gap-8 lg:w-1/2">
+          <h3 className="section-heading">
             Contact us
           </h3>
 
-          <p className="font-manrope text-lg text-black">Contact us and let us know how we can help you.</p>
+          <p className="font-manrope text-lg text-black">
+            Contact us and let us know how we can help you.
+          </p>
 
           <Image src={WorldImage} className="fill-black" alt="World image" />
           {/* <OrbitingCirclesDemo /> */}

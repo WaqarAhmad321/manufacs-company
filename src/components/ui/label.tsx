@@ -7,7 +7,7 @@ const Label: React.FC<React.LabelHTMLAttributes<HTMLLabelElement>> = ({
 }) => {
   return (
     <label
-      className={cn("font-manrope text-base text-white", className)}
+      className={cn("font-manrope text-base text-black", className)}
       {...props}
     />
   );

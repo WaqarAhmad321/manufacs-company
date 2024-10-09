@@ -1,5 +1,6 @@
 import Companies from "@/components/companies";
 import ContactSection from "@/components/contact-section";
+import Testimonials from "@/components/feedback-section";
 import HeroSection from "@/components/hero-section";
 import Navbar from "@/components/navbar";
 import ProjectVideo from "@/components/ui/project-video";
@@ -17,6 +18,7 @@ export default function Home() {
 
       <Companies />
       <WhyUsSection />
+      <Testimonials />
       <ContactSection />
     </>
   );
