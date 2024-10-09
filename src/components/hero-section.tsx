@@ -96,7 +96,7 @@ const HeroSection = () => {
             // loop
             className="w-[87.5rem mx-auto mt-24 rounded-2xl lg:mt-12 lg:h-[40rem]"
           ></MotionVideo>
-          <BorderBeam />
+          {/* <BorderBeam /> */}
         </div>
       </div>
 
