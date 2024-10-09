@@ -45,14 +45,14 @@ const companyImages = [
   {
     src: NilDonor,
     alt: "Nil Donor",
-    width: 350,
-    height: 350,
+    width: 330,
+    height: 330,
   },
   {
     src: StrikeFinance,
     alt: "Strike Finance",
-    width: 350,
-    height: 350,
+    width: 370,
+    height: 370,
   },
   {
     src: HoneyComb,
