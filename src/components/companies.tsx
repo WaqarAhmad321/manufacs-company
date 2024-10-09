@@ -95,12 +95,12 @@ const Companies = () => {
     <div className="relative flex h-[200px] md:h-[500px] w-full flex-col items-center justify-center overflow-hidden bg-white pt-12 md:pt-60">
       <Marquee className="[--duration:20s]">
         {companyImages.slice(0, 4).map((company, index) => (
-          <Company company={company} index={index} />
+          <Company key={index} company={company} index={index} />
         ))}
       </Marquee>
       <Marquee reverse className="[--duration:20s]">
         {companyImages.slice(4, 8).map((company, index) => (
-          <Company company={company} index={index} />
+          <Company key={index} company={company} index={index} />
         ))}
       </Marquee>
     </div>
