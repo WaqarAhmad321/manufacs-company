@@ -20,7 +20,8 @@ const config: Config = {
         "brand-dark": "#1b0655",
         "brand-light": "#4d2dcb",
         "brand-lighter": "#7d5ddc",
-        "brand-lightest": "#bdaeee",
+        "brand-lightest": "#bcb2ff", 
+        heading: "#3e3a51",
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
@@ -62,6 +63,11 @@ const config: Config = {
         "marquee-vertical": {
           from: { transform: "translateY(0)" },
           to: { transform: "translateY(calc(-100% - var(--gap)))" },
+        },
+        "border-beam": {
+          "100%": {
+            "offset-distance": "100%",
+          },
         },
       },
       fontFamily: {

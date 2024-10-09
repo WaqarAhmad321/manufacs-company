@@ -4,6 +4,7 @@ import HeroSection from "@/components/hero-section";
 import Navbar from "@/components/navbar";
 import ProjectVideo from "@/components/ui/project-video";
 import { Spotlight } from "@/components/ui/spotlight-effect";
+import WhyUsSection from "@/components/whyus-section";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </div>
 
       <Companies />
+      <WhyUsSection />
       <ContactSection />
     </>
   );

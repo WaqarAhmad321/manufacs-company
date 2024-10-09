@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased ${lexend.variable} ${manRope.variable}`}>
+      <body className={`antialiased bg-white ${lexend.variable} ${manRope.variable}`}>
         {children}
       </body>
     </html>
