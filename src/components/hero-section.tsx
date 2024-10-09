@@ -6,6 +6,7 @@ import { PulsatingButton } from "./ui/shimmer-button";
 import { manRope } from "@/lib/fonts";
 import Image from "next/image";
 import HeroImage from "@/../public/hero-light.png";
+import { BorderBeam } from "./ui/border-beam";
 
 const HeroSection = () => {
   return (
@@ -80,7 +81,7 @@ const HeroSection = () => {
           className="mx-auto mt-12 max-w-[87.5rem] rounded-xl"
         /> */}
 
-        <div className="shadow-2xl">
+        <div className="relative shadow-2xl">
           <motion.video
             initial={{
               opacity: 0,
@@ -99,8 +100,9 @@ const HeroSection = () => {
             // autoPlay
             muted
             // loop
-            className="w-[87.5rem mx-auto mt-24 lg:mt-12 rounded-xl lg:h-[40rem]"
+            className="w-[87.5rem mx-auto mt-24 rounded-xl lg:mt-12 lg:h-[40rem]"
           ></motion.video>
+          <BorderBeam />
         </div>
       </div>
 
