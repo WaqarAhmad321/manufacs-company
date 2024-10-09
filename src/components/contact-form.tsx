@@ -3,35 +3,11 @@
 import React, { useRef } from "react";
 import Label from "./ui/label";
 import Input from "./ui/input";
-import { GridPattern } from "./ui/dot-pattern";
-import { cn } from "@/lib/utils";
 
 const ContactForm = () => {
   const ref = useRef<HTMLFormElement>(null);
   return (
-    <div className="relative rounded-2xl border-2 px-8 py-8 shadow-lg">
-      <GridPattern
-        squares={[
-          [4, 4],
-          [5, 1],
-          [8, 2],
-          [5, 3],
-          [5, 5],
-          [10, 10],
-          [12, 15],
-          [15, 10],
-          [10, 15],
-          [15, 10],
-          [10, 15],
-          [15, 10],
-        ]}
-        className={cn(
-          "absolute left-0 top-0 -z-10 size-[400px]",
-          "[mask-image:radial-gradient(400px_circle_at_center,white,transparent)]",
-          "skew-y-12",
-        )}
-      />
-
+    <div className="rounded-2xl border-2 px-8 py-8 shadow-lg">
       <form
         ref={ref}
         className="flex flex-col gap-4"

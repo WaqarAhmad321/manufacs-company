@@ -101,7 +101,7 @@ const HeroSection = () => {
       </div>
 
       <Particles
-        className="absolute inset-0"
+        className="absolute inset-0 overflow-hidden"
         quantity={100}
         ease={80}
         color={"#fff"}
