@@ -52,7 +52,7 @@ const Navbar = () => {
   return (
     <nav
       className={cn(
-        "fixed top-0 z-[100] flex w-full items-center justify-between px-6 py-6 text-white transition-all duration-300",
+        "fixed top-0 z-[9999] flex w-full items-center justify-between px-6 py-6 text-white transition-all duration-300",
         {
           "bg-white py-4 text-brand-dark/80 shadow-lg": isScrolled,
           "bg-transparent": !isScrolled,

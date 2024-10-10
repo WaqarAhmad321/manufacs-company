@@ -81,8 +81,8 @@ const contacts = [
 const Footer = () => {
   return (
     <footer className="relative bg-brand-dark">
-      <div className="container flex justify-between py-12">
-        <div className="z-[999] w-[30%] space-y-6">
+      <div className="container flex flex-col gap-12 justify-between py-12 lg:flex-row">
+        <div className="z-[999] w-full space-y-6 lg:w-[30%]">
           <Link
             href="/"
             className="flex items-center gap-4 font-lexend text-3xl font-bold uppercase"

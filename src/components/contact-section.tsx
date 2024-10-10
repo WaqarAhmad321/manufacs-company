@@ -39,7 +39,7 @@ const ContactSection = () => {
           <h3 className="section-heading">Contact us</h3>
           <p className="font-manrope text-lg text-black">
             We are always looking for ways to improve products and services.{" "}
-            <br />
+            <br className="hidden lg:block" />
             Contact us and let us know how we can help you!
           </p>
           <div className="hidden flex-col items-center gap-4 md:flex-row lg:flex">
