@@ -13,7 +13,7 @@ const ContactSection = () => {
         <div className="relative flex w-full flex-col items-start justify-start gap-8 lg:w-1/2">
           <div className="flex items-center justify-center overflow-hidden rounded-[5px] bg-gray-50 p-5">
             <svg
-              xml800ns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/2000/svg"
               width="24"
               height="24"
               viewBox="0 0 24 24"
