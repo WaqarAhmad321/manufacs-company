@@ -7,7 +7,7 @@ import Input from "./ui/input";
 const ContactForm = () => {
   const ref = useRef<HTMLFormElement>(null);
   return (
-    <div className="rounded-2xl border-2 px-8 py-8 shadow-lg">
+    <div className="rounded-2xl bg-white border-2 px-8 py-8 shadow-lg">
       <form
         ref={ref}
         className="flex flex-col gap-4"

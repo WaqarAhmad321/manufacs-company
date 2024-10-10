@@ -1,6 +1,5 @@
 import Particles from "./ui/particles";
 import { PulsatingButton } from "./ui/shimmer-button";
-import { BorderBeam } from "./ui/border-beam";
 import { MotionDiv, MotionH1, MotionP, MotionVideo } from "./motion-tags";
 
 const HeroSection = () => {
@@ -91,7 +90,7 @@ const HeroSection = () => {
               duration: 0.9,
               ease: "easeIn",
             }}
-            src="/Home-Hero-Video.mp4"
+            src="/hero-video.mp4"
             autoPlay
             muted
             loop

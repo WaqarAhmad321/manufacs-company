@@ -1,8 +1,12 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
+import CompanyLogo from "@/../public/logo/logo.png";
+import CompanyLogo2 from "@/../public/logo/logo-2.png";
+import { MotionButton } from "./motion-tags";
 
 const navlinks = [
   {
@@ -50,12 +54,25 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 z-[100] flex w-full items-center justify-between px-6 py-6 text-white transition-all duration-300",
         {
-          "bg-white py-4 text-black shadow-lg": isScrolled,
+          "bg-white py-4 text-brand-dark/80 shadow-lg": isScrolled,
           "bg-transparent": !isScrolled,
         },
       )}
     >
-      <Link href="/" className="font-lexend text-3xl font-bold uppercase">
+      <Link
+        href="/"
+        className="flex items-center gap-4 font-lexend text-3xl font-bold uppercase"
+      >
+        {isScrolled ? (
+          <Image
+            src={CompanyLogo2}
+            alt="Manufacs logo"
+            width={40}
+            height={40}
+          />
+        ) : (
+          <Image src={CompanyLogo} alt="Manufacs logo" width={40} height={40} />
+        )}
         Manufacs.
       </Link>
 
@@ -64,8 +81,10 @@ const Navbar = () => {
           <Link
             href={href}
             key={index}
-            className={`font-manrope hover:text-brand-light rounded-md px-4 py-2 text-base font-bold transition-colors ${
-              isScrolled ? "text-black hover:bg-gray-200" : "text-white hover:bg-white"
+            className={`rounded-md px-4 py-2 font-manrope text-base font-bold transition-colors hover:text-brand-light ${
+              isScrolled
+                ? "text-black hover:bg-gray-200"
+                : "text-white hover:bg-white"
             }`}
           >
             {name}
@@ -74,13 +93,16 @@ const Navbar = () => {
       </ul>
 
       <Link href="/contact">
-        <button
-          className={`font-manrope rounded-md px-4 py-2 text-base font-bold transition-all ${
-            isScrolled ? "bg-black text-white" : "bg-white text-black"
+        <MotionButton
+          whileHover={{
+            scale: 1.05,
+          }}
+          className={`rounded-md px-4 py-2 font-manrope text-base font-bold transition-all ${
+            isScrolled ? "bg-brand-dark/80 text-white" : "bg-white text-black"
           }`}
         >
           Contact Now!
-        </button>
+        </MotionButton>
       </Link>
     </nav>
   );

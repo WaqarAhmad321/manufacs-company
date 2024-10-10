@@ -2,7 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import React from "react";
 import CambitasLogo from "@/../public/logo/cambitas.png";
 import InflumonitorLogo from "@/../public/logo/nav-logo.svg";
-import Kiwami from "@/../public/logo/kiwami.png";
+import Kiwami from "@/../public/logo/kiwami-logo-2.png";
 import MarketGenius from "@/../public/logo/market-genius.webp";
 import EdenLife from "@/../public/logo/edenlife.png";
 import NilDonor from "@/../public/logo/nil-donor.webp";
@@ -51,8 +51,8 @@ const companyImages = [
   {
     src: HoneyComb,
     alt: "Honey Comb",
-    width: 250,
-    height: 250,
+    width: 290,
+    height: 290,
   },
   {
     src: EdenLife,
@@ -80,11 +80,12 @@ const Company: React.FC<CompanyProps> = ({ company }, index) => {
       alt={company.alt}
       width={company.width}
       height={company.height}
-      className={cn("object-contain grayscale filter", {
-        "invert": company.alt === "Kiwami" || company.alt === "Strike Finance",
+      className={cn("object-contain", {
+        "invert": company.alt === "Strike Finance",
       })}
       style={{
         aspectRatio: "3/2",
+        // filter: "brightness(0) contrast(0)",
       }}
     />
   );
@@ -92,7 +93,8 @@ const Company: React.FC<CompanyProps> = ({ company }, index) => {
 
 const Companies = () => {
   return (
-    <div className="relative flex h-[200px] md:h-[500px] w-full flex-col items-center justify-center overflow-hidden bg-white pt-12 md:pt-60 md:pb-24">
+    <div className="relative flex h-[200px] w-full flex-col items-center justify-center overflow-hidden bg-white pt-12 md:h-[650px] md:pb-24 md:pt-60">
+      <h3 className="section-heading !text-5xl pb-2">Our trusted clients</h3>
       <Marquee className="[--duration:20s]">
         {companyImages.slice(0, 4).map((company, index) => (
           <Company key={index} company={company} index={index} />

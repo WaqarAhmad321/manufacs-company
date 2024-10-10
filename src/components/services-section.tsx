@@ -31,7 +31,7 @@ const ServicesSection = () => {
   return (
     <section className="py-36">
       <div className="flex flex-col items-center">
-        <h2 className="section-heading">Services you can get</h2>
+        <h2 className="section-heading">Services we offer</h2>
 
         <div className="container mt-8 flex flex-col justify-center gap-8 md:mt-12 md:flex-row">
           {services.map(({ id, description, image, title }, index) => (

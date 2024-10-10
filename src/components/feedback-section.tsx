@@ -2,6 +2,7 @@ import React from "react";
 import { Marquee } from "./ui/marquee";
 import PlaceholderImage from "@/../public/placeholder.jpg";
 import Image, { StaticImageData } from "next/image";
+
 const testimonials = [
   {
     name: "Annie Lawrence",
@@ -100,7 +101,7 @@ const Testimonial: React.FC<TestimonialProps> = ({ testimonial }, index) => {
 
 const Testimonials = () => {
   return (
-    <div className="bg-white space-y-8 py-24">
+    <div className="bg-white space-y-8 pb-24">
       <h3 className="section-heading">
         What our clients say
       </h3>

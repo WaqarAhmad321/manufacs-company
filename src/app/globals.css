@@ -53,6 +53,13 @@ body {
   }
 
   .section-heading {
-    @apply text-heading text-center font-lexend text-4xl font-bold tracking-wide md:text-6xl lg:text-7xl;
+    @apply text-center font-lexend text-4xl font-bold tracking-wide text-heading md:text-6xl lg:text-7xl;
   }
+}
+
+#particles canvas {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }

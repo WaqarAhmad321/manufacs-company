@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { lexend, manRope } from "@/lib/fonts";
+import ParticlesComponent from "@/components/initiate-app";
 
 export const metadata: Metadata = {
   title: "Manufacs",
@@ -14,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased bg-white ${lexend.variable} ${manRope.variable}`}>
+      <body
+        className={`bg-white antialiased ${lexend.variable} ${manRope.variable}`}
+      >
         {children}
       </body>
     </html>
