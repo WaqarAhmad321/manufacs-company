@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { lexend, manRope } from "@/lib/fonts";
-import ParticlesComponent from "@/components/initiate-app";
 
 export const metadata: Metadata = {
   title: "Manufacs",
