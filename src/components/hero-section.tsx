@@ -22,7 +22,7 @@ const HeroSection = () => {
             duration: 0.6,
             ease: "easeIn",
           }}
-          className="bg-opacity-50 py-7 text-center font-lexend text-4xl font-bold md:text-6xl lg:text-8xl"
+          className="bg-opacity-50 py-7 text-center font-lexend text-4xl font-bold md:text-6xl lg:text-8xl text-white"
         >
           Online presence now <br className="hidden lg:block" /> for everyone.
         </MotionH1>

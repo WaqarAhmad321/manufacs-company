@@ -80,7 +80,7 @@ const contacts = [
 
 const Footer = () => {
   return (
-    <footer className="relative bg-brand-dark">
+    <footer className="relative text-white bg-brand-dark">
       <div className="container flex flex-col gap-12 justify-between py-12 lg:flex-row">
         <div className="z-[999] w-full space-y-6 lg:w-[30%]">
           <Link
