@@ -20,8 +20,10 @@ const config: Config = {
         "brand-dark": "#1b0655",
         "brand-light": "#4d2dcb",
         "brand-lighter": "#7d5ddc",
-        "brand-lightest": "#bcb2ff", 
+        "brand-lightest": "#bcb2ff",
         heading: "#3e3a51",
+        paragraph: "#6b6b6b",
+        "light-pink": "#f7f6fd",
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",

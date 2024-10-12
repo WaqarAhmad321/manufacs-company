@@ -1,28 +1,34 @@
 import Companies from "@/components/companies";
-import ContactSection from "@/components/contact-section";
-import Testimonials from "@/components/feedback-section";
-import HeroSection from "@/components/hero-section";
-import Navbar from "@/components/navbar";
-import ServicesSection from "@/components/services-section";
-import { Spotlight } from "@/components/ui/spotlight-effect";
+import HeroSection from "@/components/home-hero";
 import WhyUsSection from "@/components/whyus-section";
-import footer from "@/components/footer";
-import Footer from "@/components/footer";
+import Testimonials from "@/components/feedback-section";
+import ContactSection from "@/components/contact-section";
+import ServicesSection from "@/components/services-section";
+
 export default function Home() {
   return (
     <>
-      <div className="relative">
-        <Navbar />
-        <HeroSection />
-        <Spotlight className="-top-40 left-0 overflow-x-hidden md:-top-20 md:left-60" />
-      </div>
+      <HeroSection />
 
-      <Companies />
-      <WhyUsSection />
-      <ServicesSection />
-      <Testimonials />
-      <ContactSection />
-      <Footer />
+      <section className="pt-12 md:pb-24 md:pt-60">
+        <Companies />
+      </section>
+
+      <section className="bg-light-pink py-12 md:py-24">
+        <WhyUsSection />
+      </section>
+
+      <section className="py-36">
+        <ServicesSection />
+      </section>
+
+      <section className="space-y-8 bg-white pb-24">
+        <Testimonials />
+      </section>
+
+      <section className="py-24">
+        <ContactSection />
+      </section>
     </>
   );
 }

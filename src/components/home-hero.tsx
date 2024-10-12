@@ -1,11 +1,13 @@
 import Particles from "./ui/particles";
 import { PulsatingButton } from "./ui/shimmer-button";
 import { MotionDiv, MotionH1, MotionP, MotionVideo } from "./motion-tags";
+import { Spotlight } from "./ui/spotlight-effect";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <div className="bg-brand-dark relative flex w-full justify-center px-4 bg-grid-white/[0.2] lg:h-[70rem]">
-      <div className="bg-brand-dark pointer-events-none absolute inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+    <div className="relative flex w-full justify-center bg-brand-dark px-4 bg-grid-white/[0.2] lg:h-[70rem]">
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-brand-dark [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
       <div className="z-50 mt-32 lg:mt-48">
         <MotionH1
@@ -13,7 +15,6 @@ const HeroSection = () => {
             opacity: 0,
             y: 100,
           }}
-
           animate={{
             opacity: 1,
             y: 0,
@@ -22,7 +23,7 @@ const HeroSection = () => {
             duration: 0.6,
             ease: "easeIn",
           }}
-          className="bg-opacity-50 py-7 text-center font-lexend text-4xl font-bold md:text-6xl lg:text-8xl text-white"
+          className="bg-opacity-50 bg-gradient-to-b from-neutral-100 to-neutral-200 bg-clip-text py-7 text-center font-lexend text-4xl font-bold text-transparent md:text-6xl lg:text-8xl"
         >
           Online presence now <br className="hidden lg:block" /> for everyone.
         </MotionH1>
@@ -41,7 +42,7 @@ const HeroSection = () => {
             ease: "easeIn",
             // delay: 0.6,
           }}
-          className="font-manrope mx-auto text-center text-base font-normal leading-7 tracking-wide text-neutral-200 lg:text-[22px]"
+          className="mx-auto text-center font-manrope text-base font-normal leading-7 tracking-wide text-neutral-200 lg:text-[22px]"
         >
           Having online business presence should not be expensive{" "}
           <br className="hidden md:block" /> That&apos;s why, Manufacs provide
@@ -64,9 +65,11 @@ const HeroSection = () => {
           }}
           className="z-50 mt-8 flex w-full justify-center"
         >
-          <PulsatingButton className="text-brand z-50 bg-white font-lexend font-bold uppercase hover:cursor-pointer lg:text-xl">
-            Book a free Consultation
-          </PulsatingButton>
+          <Link href="/contact">
+            <PulsatingButton className="z-50 bg-white font-lexend font-bold uppercase text-brand hover:cursor-pointer lg:text-xl">
+              Book a free Consultation
+            </PulsatingButton>
+          </Link>
         </MotionDiv>
 
         {/* <Image
@@ -107,6 +110,7 @@ const HeroSection = () => {
         color={"#fff"}
         refresh
       />
+      <Spotlight className="-top-40 left-0 overflow-x-hidden md:-top-20 md:left-60" />
     </div>
   );
 };

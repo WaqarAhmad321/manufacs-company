@@ -101,10 +101,8 @@ const Testimonial: React.FC<TestimonialProps> = ({ testimonial }, index) => {
 
 const Testimonials = () => {
   return (
-    <div className="bg-white space-y-8 pb-24">
-      <h3 className="section-heading">
-        What our clients say
-      </h3>
+    <>
+      <h3 className="section-heading">What our clients say</h3>
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
         <Marquee pauseOnHover className="[--duration:20s]">
           {testimonials.slice(0, 4).map((testimonial, index) => (
@@ -117,7 +115,7 @@ const Testimonials = () => {
           ))}
         </Marquee>
       </div>
-    </div>
+    </>
   );
 };
 

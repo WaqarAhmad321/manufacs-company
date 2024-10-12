@@ -1,7 +1,7 @@
+import HeroSection from "@/components/ui/hero-section";
 import Image from "next/image";
 import React from "react";
 import WhyUsImage from "@/../public/whyus-reason.png";
-import { motion } from "framer-motion";
 
 const services = [
   {
@@ -25,14 +25,28 @@ const services = [
       "We design beautiful and intuitive user interfaces that are easy to use. We use the latest design trends to ensure your app looks great.",
     image: "/ui.png",
   },
+  {
+    id: 3,
+    title: "UI/UX Design",
+    description:
+      "We design beautiful and intuitive user interfaces that are easy to use. We use the latest design trends to ensure your app looks great.",
+    image: "/ui.png",
+  },
+  {
+    id: 3,
+    title: "UI/UX Design",
+    description:
+      "We design beautiful and intuitive user interfaces that are easy to use. We use the latest design trends to ensure your app looks great.",
+    image: "/ui.png",
+  },
 ];
 
-const ServicesSection = () => {
+const ServicesPage = () => {
   return (
-    <div className="flex flex-col items-center">
-      <h2 className="section-heading">Services we offer</h2>
+    <>
+      <HeroSection title="Services we offer" />
 
-      <div className="container mt-8 flex flex-col justify-center gap-8 md:mt-12 md:flex-row">
+      <div className="container py-16 flex flex-col flex-wrap justify-center gap-8 md:flex-row">
         {services.map(({ id, description, image, title }, index) => (
           <div
             key={index}
@@ -64,8 +78,8 @@ const ServicesSection = () => {
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 };
 
-export default ServicesSection;
+export default ServicesPage;
