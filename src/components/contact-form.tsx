@@ -7,7 +7,7 @@ import Input from "./ui/input";
 const ContactForm = () => {
   const ref = useRef<HTMLFormElement>(null);
   return (
-    <div className="rounded-2xl bg-white border-2 px-8 py-8 shadow-lg">
+    <div className="rounded-2xl border-2 bg-white px-8 py-8 shadow-lg">
       <form
         ref={ref}
         className="flex flex-col gap-4"
@@ -85,7 +85,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="w-max rounded-md bg-brand px-4 py-2 font-manrope font-bold text-white"
+          className="w-max rounded-md bg-brand-dark/80 px-4 py-2 font-manrope font-bold text-white"
         >
           Send Message
         </button>
