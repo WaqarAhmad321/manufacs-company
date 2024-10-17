@@ -39,17 +39,20 @@ const ServicesSection = () => {
             className="max-w-sm space-y-8 rounded-xl border-2 border-white bg-[#f7f6fd] shadow-xl"
           >
             <div className="space-y-4 px-4 pt-8">
-              <Image
-                src={image}
-                alt={title}
-                width={50}
-                height={50}
-                className="mix-blend-multiply"
-              />
-              <h4 className="font-lexend text-3xl font-bold leading-9 tracking-wide text-heading">
+              <div className="flex items-center justify-center">
+                <Image
+                  src={image}
+                  alt={title}
+                  width={50}
+                  height={50}
+                  className="mix-blend-multiply"
+                />
+              </div>
+              
+              <h4 className="text-center font-lexend text-3xl font-bold leading-9 tracking-wide text-heading">
                 {title}
               </h4>
-              <p className="font-regular font-manrope text-lg leading-7 tracking-wide text-heading">
+              <p className="font-regular text-center font-manrope text-lg leading-7 tracking-wide text-heading">
                 {description}
               </p>
             </div>

@@ -64,7 +64,7 @@ const Navbar = () => {
     >
       <Link
         href="/"
-        className="flex items-center gap-4 font-lexend text-3xl font-bold uppercase"
+        className="flex items-center gap-4 font-lexend text-2xl font-bold uppercase md:text-3xl"
       >
         {isScrolled || pathname !== "/" ? (
           <Image
@@ -103,7 +103,7 @@ const Navbar = () => {
           whileHover={{
             scale: 1.05,
           }}
-          className={`rounded-md px-4 py-2 font-manrope text-base font-bold transition-all ${
+          className={`rounded-md px-2 py-2 font-manrope text-base font-bold transition-all md:px-4 ${
             isScrolled || pathname !== "/"
               ? "bg-brand-dark/80 text-white"
               : "bg-white text-black"

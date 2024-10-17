@@ -14,15 +14,15 @@ export default function Home() {
         <Companies />
       </section>
 
-      <section className="bg-light-pink py-12 md:py-24">
-        <WhyUsSection />
-      </section>
-
-      <section className="py-36">
+      <section className="pb-24 md:pb-36">
         <ServicesSection />
       </section>
 
-      <section className="space-y-8 bg-white pb-24">
+      <section className="bg-light-pink py-12 md:py-2">
+        <WhyUsSection />
+      </section>
+
+      <section className="space-y-8 bg-white py-24">
         <Testimonials />
       </section>
 

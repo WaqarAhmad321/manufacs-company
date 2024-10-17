@@ -42,7 +42,7 @@ const ContactSection = ({ title }: { title?: string }) => {
           <div className="h-1 w-1 rounded-full bg-neutral-500"></div>
           <p className="text-sm text-neutral-500">+1 (800) 123 XX21</p>
           <div className="h-1 w-1 rounded-full bg-neutral-500"></div>
-          <p className="text-sm text-neutral-500">support@manufacs.com</p>
+          {/* <p className="text-sm text-neutral-500">support@manufacs.com</p> */}
         </div>
 
         <WorldMap />

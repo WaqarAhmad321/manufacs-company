@@ -3,7 +3,7 @@ import React from "react";
 
 const WorldMap = () => {
   return (
-    <div className="relative lg:flex w-[600px] flex-shrink-0 -translate-x-10 items-center justify-center [perspective:800px] [transform-style:preserve-3d] sm:-translate-x-0 lg:-translate-x-2 hidden">
+    <div className="relative lg:flex w-[600px] flex-shrink-0 -translate-x-10 items-center justify-center [perspective:800px] [transform-style:preserve-3d] sm:-translate-x-0 lg:-translate-x-28 hidden">
       <Image
         alt="world map"
         loading="lazy"

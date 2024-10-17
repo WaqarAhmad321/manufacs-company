@@ -32,12 +32,12 @@ const Description: React.FC<DescriptionProps> = ({
           <p className="font-lexend text-7xl font-bold text-brand-lightest opacity-50">
             #{id}
           </p>
-          <h4 className="font-lexend text-4xl font-medium text-heading">
+          <h4 className="font-lexend text-3xl md:text-4xl font-medium text-heading">
             {title}
           </h4>
         </div>
 
-        <p className="font-manrope text-lg text-heading">{description}</p>
+        <p className="font-manrope text-base md:text-lg text-heading">{description}</p>
       </div>
     </div>
   );

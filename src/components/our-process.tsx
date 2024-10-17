@@ -32,10 +32,10 @@ const OurProcess = () => {
     <div className="bg-light-pink mt-24">
       <div className="container space-y-16 py-24">
         <h3 className="text-center font-lexend text-4xl font-bold text-heading md:text-6xl">
-          Our unified workflow, <br /> from design to development
+          Our unified workflow, <br /> from design to deployment
         </h3>
 
-        <div className="space-y-4 rounded-xl bg-white px-4 pt-8">
+        <div className="space-y-6 rounded-xl bg-white px-4 pt-8">
           <div className="relative mx-auto max-w-2xl border-b-2 border-gray-300">
             <div className="grid grid-cols-3">
               {tabs.map(({ id, image, title, icon }, index) => (
@@ -73,8 +73,8 @@ const OurProcess = () => {
           <Image
             src={tabs[activeTab].image}
             alt={tabs[activeTab].title}
-            className="w-full object-contain"
-            height={400}
+            className="!w-full h-[500px] object-contain"
+            // height={400}
           />
         </div>
       </div>

@@ -10,7 +10,7 @@ const ContactCard = ({
 }: {
   title: string;
   detail: string;
-  icon: IconType;
+  Icon: IconType;
 }) => (
   <div className="grid place-items-center gap-3 rounded-lg border bg-white py-8 shadow-lg transition-shadow duration-300 ease-in-out hover:shadow-xl">
     <div className="grid place-items-center gap-2">
@@ -25,18 +25,18 @@ const ContactPage = () => {
   return (
     <>
       <HeroSection title="Contact Us" />
-      <div className="container grid grid-cols-3 gap-4 py-10">
+      <div className="container grid grid-cols-1 lg:grid-cols-3 gap-4 py-10">
         <ContactCard
           Icon={MdLocationOn}
           title="Our Address"
           detail="123 Street, City, Country"
         />
 
-        <ContactCard Icon={MdPhone} title="Call Us" detail="+123 456 7890" />
+        <ContactCard Icon={MdPhone} title="Call Us" detail="+92 3045889458" />
         <ContactCard
           Icon={MdEmail}
           title="Email Us"
-          detail="example@gmail.com"
+          detail="contact@manufacs.com"
         />
       </div>
 
