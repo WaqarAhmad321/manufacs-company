@@ -9,7 +9,7 @@ const sendEmail = async (formData: FormData) => {
   const senderName = formData.get("senderName");
   const message = formData.get("senderMessage");
   const senderEmail = formData.get("senderEmail");
-  
+
   if (!senderName || typeof senderName !== "string") {
     return {
       error: "Invalid sender name",
@@ -27,14 +27,12 @@ const sendEmail = async (formData: FormData) => {
       error: "Invalid sender email",
     };
   }
-
   try {
     await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
       to: "contact@manufacs.com",
       subject: `New Message by ${senderName.toUpperCase()} from Portfolio`,
       replyTo: senderEmail,
-      // react: <EmailContactForm message={message} senderEmail={senderEmail} />,
       text: message,
     });
   } catch (error) {

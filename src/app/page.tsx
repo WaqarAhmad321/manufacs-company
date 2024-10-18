@@ -18,7 +18,7 @@ export default function Home() {
         <ServicesSection />
       </section>
 
-      <section className="bg-light-pink py-12 md:py-2">
+      <section className="bg-light-pink py-12 md:py-24">
         <WhyUsSection />
       </section>
 

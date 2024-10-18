@@ -19,11 +19,11 @@ const ContactForm = () => {
         className="flex flex-col gap-4"
         action={async (formData: FormData) => {
           const data = await sendEmail(formData);
-
+          console.log(data)
           if (data?.error) {
             toast.error(getErrorMessage(data.error));
           } else {
-            ref.current?.reset();
+            // ref.current?.reset();
             toast.success("Message send successfully.", {
               style: {
                 border: "1px solid #2C73F8",

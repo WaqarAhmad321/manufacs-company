@@ -25,11 +25,11 @@ const ContactPage = () => {
   return (
     <>
       <HeroSection title="Contact Us" />
-      <div className="container grid grid-cols-1 lg:grid-cols-3 gap-4 py-10">
+      <div className="container grid grid-cols-1 gap-4 py-10 lg:grid-cols-3">
         <ContactCard
           Icon={MdLocationOn}
           title="Our Address"
-          detail="123 Street, City, Country"
+          detail="Lahore, Pakistan"
         />
 
         <ContactCard Icon={MdPhone} title="Call Us" detail="+92 3045889458" />

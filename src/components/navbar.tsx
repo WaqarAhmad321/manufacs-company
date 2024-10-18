@@ -85,11 +85,11 @@ const Navbar = () => {
             href={href}
             key={index}
             className={cn(
-              "$ rounded-md px-4 py-2 font-manrope text-base font-bold text-white transition-colors hover:text-brand-light",
+              "$ rounded-md px-4 py-2 font-manrope text-base font-bold text-white transition-colors hover:bg-gray-200 hover:text-brand-dark",
               {
-                "text-black hover:bg-white": isScrolled || pathname !== href,
-                "text-white hover:bg-white": !isScrolled && pathname === "/",
                 "bg-gray-200 text-brand-dark": pathname === href,
+                "!text-black": isScrolled && pathname === "/",
+                "text-black": pathname !== "/",
               },
             )}
           >
