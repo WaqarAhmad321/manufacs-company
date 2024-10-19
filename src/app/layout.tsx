@@ -43,7 +43,7 @@ export const metadata: Metadata = {
       "At Manufacs, we deliver efficient digital solutions that ensure a great user experience, drive business growth, and provide ongoing support for your success.",
     url: "https://manufacs.com",
     siteName: "Manufacs",
-    // images: "https://www.smashcode.dev/opengraph-image.png",
+    images: "https://www.manufacs.com/opengraph-image.png",
   },
   twitter: {
     card: "summary_large_image",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: "https://manufacs.com",
     description:
       "At Manufacs, we deliver efficient digital solutions that ensure a great user experience, drive business growth, and provide ongoing support for your success.",
-    // images: "https://www.smashcode.dev/opengraph-image.png",
+    images: "https://www.manufacs.com/opengraph-image.png",
   },
 };
 
