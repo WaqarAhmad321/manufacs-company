@@ -76,7 +76,7 @@ interface TestimonialProps {
     name: string;
     company: string;
     review: string;
-    photo: StaticImageData;
+    photo: string;
   };
   index: number;
 }
