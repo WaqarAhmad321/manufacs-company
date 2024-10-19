@@ -8,14 +8,14 @@ const services = [
     id: 1,
     title: "Web Development",
     description:
-      "We build websites that are fast, secure, and easy to manage. We use the latest technologies to ensure your website is always up to date.",
+      "Anybody can build a website. We build websites for scale that are fast, secure, and easy to manage. We use the latest technologies to ensure your website is always up to date.",
     image: "/web-dev.png",
   },
   {
     id: 2,
     title: "Mobile Development",
     description:
-      "We build mobile apps that are fast, secure, and easy to manage. We use the latest technologies to ensure your app is always up to date.",
+      "We design and develop innovative mobile applications that provide seamless experiences for users. Our team utilizes the latest technologies to create engaging, functional apps that meet your business goals and enhance user interaction.",
     image: "/app-dev.png",
   },
   {
@@ -26,19 +26,33 @@ const services = [
     image: "/ui.png",
   },
   {
-    id: 3,
-    title: "UI/UX Design",
+    id: 4,
+    title: "Landing pages",
     description:
-      "We design beautiful and intuitive user interfaces that are easy to use. We use the latest design trends to ensure your app looks great.",
+      "We create compelling landing pages designed to capture attention and drive conversions. By focusing on clear messaging and attractive design, we ensure your landing pages effectively guide users toward taking the desired action.",
     image: "/ui.png",
   },
   {
-    id: 3,
-    title: "UI/UX Design",
+    id: 5,
+    title: "Website Optimization",
     description:
-      "We design beautiful and intuitive user interfaces that are easy to use. We use the latest design trends to ensure your app looks great.",
+      "We enhance your website's performance through strategic optimization techniques. By improving loading speeds, enhancing user experience, and implementing best SEO practices, we help your site rank higher in search results and attract more visitors.",
     image: "/ui.png",
   },
+  {
+    id: 6,
+    title: "Custom Web App",
+    description:
+      "We specialize in developing custom web applications that are modern, flexible, and secure. Our user-friendly solutions are designed to handle high traffic and complex scenarios, ensuring your application meets your specific business needs",
+    image: "/ui.png",
+  },
+  // {
+  //   id: 3,
+  //   title: "UI/UX Design",
+  //   description:
+  //     "We design beautiful and intuitive user interfaces that are easy to use. We use the latest design trends to ensure your app looks great.",
+  //   image: "/ui.png",
+  // },
 ];
 
 const ServicesPage = () => {
@@ -46,11 +60,11 @@ const ServicesPage = () => {
     <>
       <HeroSection title="Services we offer" />
 
-      <div className="container py-16 flex flex-col flex-wrap justify-center gap-8 md:flex-row">
+      <div className="container flex flex-col flex-wrap justify-center gap-8 py-16 md:flex-row">
         {services.map(({ id, description, image, title }, index) => (
           <div
             key={index}
-            className="max-w-sm space-y-8 rounded-xl border-2 border-white bg-[#f7f6fd] shadow-xl"
+            className="h-ful flex max-w-sm flex-col justify-between space-y-8 rounded-xl border-2 border-white bg-[#f7f6fd] shadow-xl"
           >
             <div className="space-y-4 px-4 pt-8">
               <Image

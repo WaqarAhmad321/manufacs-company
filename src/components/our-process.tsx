@@ -30,8 +30,8 @@ const OurProcess = () => {
 
   return (
     <div className="bg-light-pink mt-24">
-      <div className="container space-y-16 py-24">
-        <h3 className="text-center font-lexend text-4xl font-bold text-heading md:text-6xl">
+      <div className="container space-y-16 py-12 md:py-24">
+        <h3 className="text-center font-lexend sm:text-4xl font-bold text-heading text-3xl md:text-6xl">
           Our unified workflow, <br /> from design to deployment
         </h3>
 
@@ -41,7 +41,7 @@ const OurProcess = () => {
               {tabs.map(({ id, image, title, icon }, index) => (
                 <button
                   key={index}
-                  className={`px-4 py-2 gap-2 place-items-center grid place-content-center font-manrope text-xl font-medium ${
+                  className={`px-4 py-2 gap-2 place-items-center grid place-content-center font-manrope text-base md:text-xl font-medium ${
                     activeTab === index
                       ? "!font-bold text-brand"
                       : "text-gray-500"

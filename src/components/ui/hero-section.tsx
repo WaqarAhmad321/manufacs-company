@@ -5,7 +5,7 @@ import Particles from "./particles";
 const HeroSection
 = ({ title }: { title: string }) => {
   return (
-    <div className="relative mt-12 flex w-full items-center justify-center bg-brand-dark px-4 bg-grid-white/[0.2] lg:h-[20rem]">
+    <div className="relative mt-12 flex w-full items-center justify-center bg-brand-dark px-4 bg-grid-white/[0.2] lg:h-[20rem] h-[14rem]">
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-brand-dark [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
       <h3 className="bg-opacity-50 text-center font-lexend text-4xl font-bold text-white md:text-6xl lg:text-8xl">
