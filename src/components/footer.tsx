@@ -80,8 +80,8 @@ const contacts = [
 
 const Footer = () => {
   return (
-    <footer className="relative text-white bg-brand-dark">
-      <div className="container flex flex-col gap-12 justify-between py-12 lg:flex-row">
+    <footer className="relative bg-brand-dark text-white">
+      <div className="container flex flex-col justify-between gap-12 py-12 lg:flex-row">
         <div className="z-[999] w-full space-y-6 lg:w-[30%]">
           <Link
             href="/"
@@ -118,7 +118,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="z-[999] space-y-6">
+        <div className="z-[999] hidden space-y-6 lg:block">
           <h4 className="font-lexend text-2xl font-bold">Social Links</h4>
           <ul className="flex flex-col gap-4">
             {socialLinks.map((link, index) => (
