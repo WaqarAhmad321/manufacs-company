@@ -25,7 +25,7 @@ const HeroSection = () => {
           }}
           className="bg-opacity-50 bg-gradient-to-b from-neutral-100 to-neutral-200 bg-clip-text py-7 text-center font-lexend text-4xl font-bold text-transparent md:text-6xl lg:text-8xl"
         >
-          Online presence now <br className="hidden lg:block" /> for everyone.
+          Building software that delivers real-world results
         </MotionH1>
 
         <MotionP
@@ -44,9 +44,9 @@ const HeroSection = () => {
           }}
           className="mx-auto text-center font-manrope text-base font-normal leading-7 tracking-wide text-neutral-200 lg:text-[22px]"
         >
-          Having online business presence should not be expensive{" "}
-          <br className="hidden md:block" /> That&apos;s why, Manufacs provide
-          afforable digital solutions.
+          At Manufacs, we deliver efficient digital solutions that ensure a
+          great user experience, <br className="hidden md:block" /> drive
+          business growth, and provide ongoing support for your success.
         </MotionP>
 
         <MotionDiv
