@@ -26,12 +26,12 @@ const ContactForm = () => {
             // ref.current?.reset();
             toast.success("Message send successfully.", {
               style: {
-                border: "1px solid #2C73F8",
+                border: "1px solid #1b0655",
                 padding: "9px",
-                color: "#2C73F8",
+                color: "#1b0655",
               },
               iconTheme: {
-                primary: "#2C73F8",
+                primary: "#1b0655",
                 secondary: "#F7FAFC",
               },
             });

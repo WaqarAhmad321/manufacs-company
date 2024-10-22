@@ -3,7 +3,7 @@
 import { getErrorMessage } from "@/lib/utils";
 import { Resend } from "resend";
 
-const resend = new Resend("re_YZ4iqPca_3zv1LaHZazz4cU1pyeRtVRfg");
+const resend = new Resend("re_LF6WTLaf_GiUJ2ca4fxVRj2i79fjw7NaB");
 
 const sendEmail = async (formData: FormData) => {
   const senderName = formData.get("senderName");

@@ -40,9 +40,9 @@ const ContactSection = ({ title }: { title?: string }) => {
         <div className="hidden flex-col items-center gap-4 md:flex-row lg:flex">
           <p className="text-sm text-neutral-500">contact@manufacs.com</p>
           <div className="h-1 w-1 rounded-full bg-neutral-500"></div>
-          <p className="text-sm text-neutral-500">+1 (800) 123 XX21</p>
+          <p className="text-sm text-neutral-500">+92 3045889458</p>
           <div className="h-1 w-1 rounded-full bg-neutral-500"></div>
-          {/* <p className="text-sm text-neutral-500">support@manufacs.com</p> */}
+          <p className="text-sm text-neutral-500">support@manufacs.com</p>
         </div>
 
         <WorldMap />

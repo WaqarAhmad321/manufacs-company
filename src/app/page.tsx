@@ -22,12 +22,12 @@ export default function Home() {
         <WhyUsSection />
       </section>
 
-      <section className="space-y-8 bg-white py-24">
+      <section className="space-y-8 bg-white pt-24">
         <Testimonials />
       </section>
 
       <section className="py-24">
-        <ContactSection />
+        <ContactSection title="Get in Touch" />
       </section>
     </>
   );

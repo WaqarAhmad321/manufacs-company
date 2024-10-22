@@ -3,6 +3,7 @@ import "./globals.css";
 import { lexend, manRope } from "@/lib/fonts";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Manufacs",
@@ -53,6 +54,7 @@ export const metadata: Metadata = {
       "At Manufacs, we deliver efficient digital solutions that ensure a great user experience, drive business growth, and provide ongoing support for your success.",
     images: "https://www.manufacs.com/opengraph-image.png",
   },
+  robots: "index, follow",
 };
 
 export default function RootLayout({
@@ -70,6 +72,11 @@ export default function RootLayout({
         {children}
 
         <Footer />
+        <Toaster
+          toastOptions={{
+            position: "bottom-right",
+          }}
+        />
       </body>
     </html>
   );
