@@ -13,6 +13,7 @@ import {
 } from "react-icons/ri";
 import Particles from "./ui/particles";
 import { Spotlight } from "./ui/spotlight-effect";
+import { cn } from "@/lib/utils";
 
 const quickLinks = [
   {
@@ -103,53 +104,13 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="z-[999] space-y-6">
-          <h4 className="font-lexend text-2xl font-bold">Quick Links</h4>
-          <ul className="flex flex-col gap-4">
-            {quickLinks.map((link, index) => (
-              <Link
-                href={link.href}
-                className="font-lexend text-lg font-semibold"
-                key={index}
-              >
-                {link.name}
-              </Link>
-            ))}
-          </ul>
-        </div>
-
-        <div className="z-[999] hidden space-y-6 lg:block">
-          <h4 className="font-lexend text-2xl font-bold">Social Links</h4>
-          <ul className="flex flex-col gap-4">
-            {socialLinks.map((link, index) => (
-              <Link
-                href={link.href}
-                className="flex gap-2 font-lexend text-lg font-semibold"
-                key={index}
-              >
-                <div className="rounded-full bg-white p-2">{link.icon}</div>{" "}
-                {link.name}
-              </Link>
-            ))}
-          </ul>
-        </div>
-
-        <div className="z-[999] space-y-6">
-          <h4 className="font-lexend text-2xl font-bold">Contact us</h4>
-
-          <ul className="flex flex-col gap-4">
-            {contacts.map((link, index) => (
-              <Link
-                href={link.href}
-                className="flex gap-2 font-lexend text-lg font-semibold hover:cursor-pointer"
-                key={index}
-              >
-                <div className="rounded-full bg-white p-2">{link.icon}</div>{" "}
-                {link.name}
-              </Link>
-            ))}
-          </ul>
-        </div>
+        <FooterLinkGroup title="Quick Links" links={quickLinks} />
+        <FooterLinkGroup
+          title="Social Links"
+          links={socialLinks}
+          containerStyles=" hidden space-y-6 lg:block"
+        />
+        <FooterLinkGroup title="Contact us" links={contacts} />
       </div>
 
       <Particles
@@ -161,6 +122,43 @@ const Footer = () => {
       />
       <Spotlight className="md:left-30 -top-40 left-0 overflow-x-hidden md:-top-20" />
     </footer>
+  );
+};
+
+type FooterLinksGroup = {
+  title: string;
+  links: {
+    name: string;
+    href: string;
+    icon?: React.ReactNode;
+  }[];
+  containerStyles?: string;
+};
+
+const FooterLinkGroup: React.FC<FooterLinksGroup> = ({
+  title,
+  links,
+  containerStyles,
+}) => {
+  return (
+    <div className={cn("z-[999] space-y-6", containerStyles)}>
+      <h4 className="font-lexend text-2xl font-bold">{title}</h4>
+
+      <ul className="flex flex-col gap-4">
+        {links.map((link, index) => (
+          <Link
+            href={link.href}
+            className="flex gap-2 font-lexend text-lg font-semibold hover:cursor-pointer"
+            key={index}
+          >
+            {link.icon && (
+              <div className="rounded-full bg-white p-2 h-max">{link.icon}</div>
+            )}{" "}
+            {link.name}
+          </Link>
+        ))}
+      </ul>
+    </div>
   );
 };
 

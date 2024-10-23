@@ -23,7 +23,7 @@ const HeroSection = () => {
             duration: 0.6,
             ease: "easeIn",
           }}
-          className="bg-opacity-50 bg-gradient-to-b from-neutral-100 to-neutral-200 bg-clip-text py-7 text-center font-lexend text-4xl font-bold text-transparent md:text-6xl lg:text-8xl"
+          className="bg-opacity-50 bg-gradient-to-b from-neutral-100 to-neutral-200 bg-clip-text py-7 text-center font-lexend text-4xl font-bold text-transparent md:text-6xl lg:text-8xl max-w-screen-2xl"
         >
           Building software that delivers real-world results
         </MotionH1>

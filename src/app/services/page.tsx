@@ -60,13 +60,13 @@ const ServicesPage = () => {
     <>
       <HeroSection title="Services we offer" />
 
-      <div className="container flex flex-col flex-wrap justify-center gap-8 py-16 md:flex-row">
+      <div className="container gap-8 py-16 grid grid-cols-1 md:grid-cols-2">
         {services.map(({ id, description, image, title }, index) => (
           <div
             key={index}
-            className="h-ful flex max-w-sm flex-col justify-between space-y-8 rounded-xl border-2 border-white bg-[#f7f6fd] shadow-xl"
+            className="h-ful flex flex-col justify-between space-y-8 rounded-xl border-2 border-white bg-[#f7f6fd] shadow-xl py-4"
           >
-            <div className="space-y-4 px-4 pt-8">
+            <div className="space-y-4 px-4">
               <Image
                 src={image}
                 alt={title}
@@ -82,13 +82,13 @@ const ServicesPage = () => {
               </p>
             </div>
 
-            <Image
+            {/* <Image
               src={WhyUsImage}
               alt={title}
               width={500}
               height={500}
               className="rounded-t-x"
-            />
+            /> */}
           </div>
         ))}
       </div>
