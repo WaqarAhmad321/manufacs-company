@@ -41,18 +41,18 @@ const AboutPage = () => {
       <HeroSection title="About us" />
 
       <div className="container">
-        <div className="flex items-center flex-col md:flex-row justify-between gap-4 py-16">
+        <div className="flex flex-col items-center justify-between gap-4 py-16 md:flex-row">
           <div className="w-full space-y-4 md:w-1/2">
             <h3 className="bg-opacity-50 font-lexend text-4xl font-bold text-heading">
               Who we are?
             </h3>
 
             <p className="font-manrope text-xl font-normal text-paragraph">
-              Manufacs is a team of skilled Developers, Graphic Designers, and
-              Copy Writers committed to fulfilling the needs of our clients to
-              their satisfaction level. We work hard to keep up with innovative
-              solutions. We focus on unique designs and robust development from
-              start to finish so that you remain focused on your core business.
+              Manufacs is a team of skilled Developers, Designers, and committed
+              to fulfilling the needs of our clients to their satisfaction
+              level. We work hard to keep up with innovative solutions. We focus
+              on unique designs and robust development from start to finish so
+              that you remain focused on your core business.
             </p>
           </div>
 

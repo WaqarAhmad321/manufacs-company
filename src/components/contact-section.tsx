@@ -15,8 +15,8 @@ const ContactSection = ({ title }: { title?: string }) => {
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="h-6 w-6 text-brand"
           >
             <path
