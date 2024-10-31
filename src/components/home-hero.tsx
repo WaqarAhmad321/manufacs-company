@@ -71,7 +71,7 @@ const HeroSection = () => {
             </PulsatingButton>
           </Link>
         </MotionDiv>
-
+          
         {/* <Image
           src={HeroImage}
           alt="Hero Image"

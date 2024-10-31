@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
+import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -25,8 +26,8 @@ const firebaseConfig = {
 // NEXT_PUBLIC_EMAILJS_USER_ID="user_gT75s8QwENPHn7STZsFUI"
 // NEXT_PUBLIC_RESEND_API_KEY="re_LF6WTLaf_GiUJ2ca4fxVRj2i79fjw7NaB"
 
-
 const firebaseApp = initializeApp(firebaseConfig);
 const db = getDatabase(firebaseApp);
+const storage = getStorage(firebaseApp);
 
-export { db, firebaseApp };
+export { db, firebaseApp, storage };

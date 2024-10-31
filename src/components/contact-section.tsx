@@ -31,7 +31,8 @@ const ContactSection = ({ title }: { title?: string }) => {
             ></path>
           </svg>
         </div>
-        <h3 className="section-heading">{title ? title : "Contact us"}</h3>
+        
+        <h3 className="section-heading !text-left">{title ? title : "Contact us"}</h3>
         <p className="font-manrope text-lg text-black">
           We are always looking for ways to improve products and services.{" "}
           <br className="hidden lg:block" />

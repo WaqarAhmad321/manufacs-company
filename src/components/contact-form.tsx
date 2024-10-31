@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Label from "./ui/label";
 import Input from "./ui/input";
 import sendEmail from "@/actions/sendEmail";
@@ -11,19 +11,21 @@ import { useFormStatus } from "react-dom";
 const ContactForm = () => {
   const ref = useRef<HTMLFormElement>(null);
   const { pending } = useFormStatus();
-
+  const [isSending, setIsSending] = useState(false);
+  console.log(pending);
   return (
     <div className="rounded-2xl border-2 bg-white px-8 py-8 shadow-lg">
       <form
         ref={ref}
         className="flex flex-col gap-4"
         action={async (formData: FormData) => {
+          setIsSending(true);
           const data = await sendEmail(formData);
-          console.log(data)
+          console.log(data);
           if (data?.error) {
             toast.error(getErrorMessage(data.error));
           } else {
-            // ref.current?.reset();
+            ref.current?.reset();
             toast.success("Message send successfully.", {
               style: {
                 border: "1px solid #1b0655",
@@ -35,6 +37,7 @@ const ContactForm = () => {
                 secondary: "#F7FAFC",
               },
             });
+            setIsSending(false);
           }
         }}
       >
@@ -97,8 +100,8 @@ const ContactForm = () => {
           type="submit"
           className="w-max rounded-md bg-brand-dark/80 px-4 py-2 font-manrope font-bold text-white"
         >
-          {pending ? (
-            <div className="border-special h-7 w-7 animate-spin rounded-full border-b-2"></div>
+          {isSending ? (
+            <div className="h-7 w-7 animate-spin rounded-full border-b-2 border-white"></div>
           ) : (
             "Send Message"
           )}

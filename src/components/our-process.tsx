@@ -12,19 +12,19 @@ const OurProcess = () => {
       id: 1,
       title: "Design",
       image: WhyUsImage,
-      icon: "/ui.png",
+      icon: "/services/ui.png",
     },
     {
       id: 2,
       title: "Development",
       image: WhyUsImage,
-      icon: "/web-dev.png",
+      icon: "/services/web-dev.png",
     },
     {
       id: 3,
       title: "Deployment",
       image: WhyUsImage,
-      icon: "/app-dev.png",
+      icon: "/services/app-dev.png",
     },
   ];
 
