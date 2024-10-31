@@ -36,7 +36,7 @@ const ServicesSection = () => {
     <div className="flex flex-col items-center">
       <h2 className="section-heading">Services we offer</h2>
 
-      <div className="container mt-8 flex flex-col justify-center gap-8 md:mt-12 md:flex-row">
+      <div className="container mt-8 flex flex-col justify-center items-center md:items-baseline gap-8 md:mt-12 md:flex-row">
         {services.map(({ id, description, icon, title, image }, index) => (
           <div
             key={index}

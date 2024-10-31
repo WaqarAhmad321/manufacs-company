@@ -1,16 +1,15 @@
-import Navbar from "@/components/navbar";
-import Image from "next/image";
 import React from "react";
-import WhyUsImage from "@/../public/whyus-reason.png";
-import SpeedImage from "@/../public/speed.jpg";
+
+import Image from "next/image";
+import Navbar from "@/components/navbar";
 import WhoWeAre from "@/../public/image.jpg";
+import SpeedImage from "@/../public/speed.jpg";
 import Companies from "@/components/companies";
-import Description from "@/components/ui/description";
-import { Spotlight } from "@/components/ui/spotlight-effect";
-import Particles from "@/components/ui/particles";
-import Footer from "@/components/footer";
 import OurProcess from "@/components/our-process";
+import Description from "@/components/ui/description";
 import HeroSection from "@/components/ui/hero-section";
+import AffordableImage from "@/../public/affordable.jpg";
+import SatisfactionImage from "@/../public/satisfaction.jpg";
 
 const reasons = [
   {
@@ -18,7 +17,7 @@ const reasons = [
     title: "Affordable Solutions",
     description:
       "Our flexible pricing models are designed to suit a range of budgets. We deliver high-quality web, app, and UI/UX solutions at competitive prices, ensuring you get the best value for your investment.",
-    image: WhyUsImage,
+    image: AffordableImage,
   },
   {
     id: 2,
@@ -32,7 +31,7 @@ const reasons = [
     title: "Guaranteed satisfaction",
     description:
       "We stand behind our work with a promise of guaranteed satisfaction. Our dedicated team collaborates closely with you throughout the development process to ensure that your vision is realized. If you're not completely happy with the end product, we'll make it right—because your satisfaction is our top priority.",
-    image: WhyUsImage,
+    image: SatisfactionImage,
   },
 ];
 

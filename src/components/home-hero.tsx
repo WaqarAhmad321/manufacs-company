@@ -3,6 +3,7 @@ import { PulsatingButton } from "./ui/shimmer-button";
 import { MotionDiv, MotionH1, MotionP, MotionVideo } from "./motion-tags";
 import { Spotlight } from "./ui/spotlight-effect";
 import Link from "next/link";
+import { BorderBeam } from "./ui/border-beam";
 
 const HeroSection = () => {
   return (
@@ -97,9 +98,9 @@ const HeroSection = () => {
             autoPlay
             muted
             loop
-            className="w-[87.5rem mx-auto mt-24 rounded-2xl lg:mt-12 lg:h-[40rem]"
+            className="w-[87.5rem mx-auto mt-24 rounded-2xl lg:mt-24 lg:h-[40rem"
           ></MotionVideo>
-          {/* <BorderBeam /> */}
+          <BorderBeam />
         </div>
       </div>
 

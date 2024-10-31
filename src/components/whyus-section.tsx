@@ -1,7 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import WhyUsImage from "@/../public/whyus-reason.png";
 import Description from "./ui/description";
+import SpeedImage from "@/../public/speed.jpg";
+import SatisfactionImage from "@/../public/satisfaction.jpg";
+import AffordableImage from "@/../public/affordable.jpg";
 
 const reasons = [
   {
@@ -9,21 +11,21 @@ const reasons = [
     title: "Affordable Solutions",
     description:
       "Our flexible pricing models are designed to suit a range of budgets. We deliver high-quality web, app, and UI/UX solutions at competitive prices, ensuring you get the best value for your investment.",
-    image: WhyUsImage,
+    image: AffordableImage,
   },
   {
     id: 2,
     title: "Speed and Efficiency",
     description:
       "We understand that time is of the essence. Our agile development process ensures quick turnaround times without compromising on quality, allowing you to launch your projects faster and stay ahead of the competition.",
-    image: WhyUsImage,
+    image: SpeedImage,
   },
   {
     id: 3,
     title: "Guaranteed satisfaction",
     description:
       "We stand behind our work with a promise of guaranteed satisfaction. Our dedicated team collaborates closely with you throughout the development process to ensure that your vision is realized. If you're not completely happy with the end product, we'll make it right—because your satisfaction is our top priority.",
-    image: WhyUsImage,
+    image: SatisfactionImage,
   },
 ];
 

@@ -24,7 +24,7 @@ const Description: React.FC<DescriptionProps> = ({
       }`}
     >
       <div className="md:w-">
-        <Image src={image} alt={title} width={500} height={500} className="rounded-2xl" />
+        <Image src={image} alt={title} width={500} height={500} className="rounded-2xl mix-blend-multiply" />
       </div>
 
       <div className="w-full ml-4 space-y-4 text-center md:w-1/2 md:text-left">
