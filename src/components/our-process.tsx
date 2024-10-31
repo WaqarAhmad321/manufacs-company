@@ -30,9 +30,9 @@ const OurProcess = () => {
     },
   ];
   
-  setInterval(() => {
-    setActiveTab((activeTab + 1) % tabs.length);
-  }, 1500);
+  // setInterval(() => {
+  //   setActiveTab((activeTab + 1) % tabs.length);
+  // }, 1500);
   // useEffect(() => {
 
   //   return () => clearInterval(interval);
