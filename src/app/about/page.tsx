@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar";
 import Image from "next/image";
 import React from "react";
 import WhyUsImage from "@/../public/whyus-reason.png";
+import WhoWeAre from "@/../public/who-are-we.webp";
 import Companies from "@/components/companies";
 import Description from "@/components/ui/description";
 import { Spotlight } from "@/components/ui/spotlight-effect";
@@ -40,7 +41,7 @@ const AboutPage = () => {
       <Navbar />
       <HeroSection title="About us" />
 
-      <div className="container">
+      <div className="container overflow-hidden">
         <div className="flex flex-col items-center justify-between gap-4 py-16 md:flex-row">
           <div className="w-full space-y-4 md:w-1/2">
             <h3 className="bg-opacity-50 font-lexend text-4xl font-bold text-heading">
@@ -57,13 +58,9 @@ const AboutPage = () => {
           </div>
 
           <div className="flex w-full justify-end md:w-1/2">
-            <Image
-              src={WhyUsImage}
-              alt="About us"
-              width={500}
-              height={500}
-              className="rounded-lg"
-            />
+            <Image src={WhoWeAre} alt="Who we are" width={500} height={500} className="animate-spin" style={{
+              animationDuration: "10s"
+            }} />
           </div>
         </div>
 

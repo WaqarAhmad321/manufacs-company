@@ -75,7 +75,6 @@ const ProjectsPage: React.FC<{
       <h2 className="section-heading pb-3 text-2xl">Explore our</h2>
       <h2 className="section-heading pb-5 text-6xl">Projects</h2>
 
-      <UploadProjects />
       {/* <div className="w-full">
         <div className="tabs-buttons-wrapper">
           {allCats.map((v, key) => {
