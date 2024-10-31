@@ -2,7 +2,8 @@ import Navbar from "@/components/navbar";
 import Image from "next/image";
 import React from "react";
 import WhyUsImage from "@/../public/whyus-reason.png";
-import WhoWeAre from "@/../public/who-are-we.webp";
+import SpeedImage from "@/../public/speed.jpg";
+import WhoWeAre from "@/../public/image.jpg";
 import Companies from "@/components/companies";
 import Description from "@/components/ui/description";
 import { Spotlight } from "@/components/ui/spotlight-effect";
@@ -24,7 +25,7 @@ const reasons = [
     title: "Speed and Efficiency",
     description:
       "We understand that time is of the essence. Our agile development process ensures quick turnaround times without compromising on quality, allowing you to launch your projects faster and stay ahead of the competition.",
-    image: WhyUsImage,
+    image: SpeedImage,
   },
   {
     id: 3,
@@ -58,9 +59,7 @@ const AboutPage = () => {
           </div>
 
           <div className="flex w-full justify-end md:w-1/2">
-            <Image src={WhoWeAre} alt="Who we are" width={500} height={500} className="animate-spin" style={{
-              animationDuration: "10s"
-            }} />
+            <Image src={WhoWeAre} alt="Who we are" width={500} height={500} />
           </div>
         </div>
 

@@ -18,23 +18,23 @@ import { cn } from "@/lib/utils";
 const quickLinks = [
   {
     name: "Home",
-    href: "#",
+    href: "/home",
   },
   {
     name: "About",
-    href: "#",
+    href: "/about",
   },
   {
     name: "Services",
-    href: "#",
+    href: "/services",
   },
   {
     name: "Portfolio",
-    href: "#",
+    href: "/projects/web-development/Landing%20page",
   },
   {
     name: "Contact",
-    href: "#",
+    href: "/contact",
   },
 ];
 
@@ -68,12 +68,12 @@ const contacts = [
     icon: <RiMailLine className="fill-black" />,
   },
   {
-    name: "+1 234 567 890",
-    href: "tel:+1234567890",
+    name: "+92 3045889458",
+    href: "tel:923045889458",
     icon: <RiPhoneFill className="fill-black" />,
   },
   {
-    name: "1234 North Avenue, New York",
+    name: "Lahore, Pakistan",
     href: "#",
     icon: <RiFileWordLine className="fill-black" />,
   },
@@ -98,9 +98,10 @@ const Footer = () => {
           </Link>
 
           <p className="font-manrope text-lg">
-            Manufacs has been a great partner in our digital journey. They have
-            helped us in creating a great online presence and we are happy with
-            the results.
+            Manufacs delivers top-notch web, app development, and design
+            services. Our talented team of developers, and designers is
+            dedicated to helping businesses thrive with, user-focused digital
+            solutions
           </p>
         </div>
 
@@ -152,7 +153,7 @@ const FooterLinkGroup: React.FC<FooterLinksGroup> = ({
             key={index}
           >
             {link.icon && (
-              <div className="rounded-full bg-white p-2 h-max">{link.icon}</div>
+              <div className="h-max rounded-full bg-white p-2">{link.icon}</div>
             )}{" "}
             {link.name}
           </Link>

@@ -70,7 +70,6 @@ const Navbar = () => {
               // width={40}
               // height={40}
               className="h-8 w-8 md:h-10 md:w-10"
-
             />
           )}
           Manufacs.
@@ -124,7 +123,7 @@ const Navbar = () => {
           <Link href="/contact">
             <MotionButton
               whileHover={{ scale: 1.05 }}
-              className={`rounded-md px-2 py-2 font-manrope text-base font-bold transition-all md:px-4 ${
+              className={`hidden rounded-md px-2 py-2 font-manrope text-base font-bold transition-all min-[390px]:block md:px-4 ${
                 isScrolled || pathname !== "/"
                   ? "bg-brand-dark/80 text-white"
                   : "bg-white text-black"
