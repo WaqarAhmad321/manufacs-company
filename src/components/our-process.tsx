@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import WhyUsImage from "@/../public/whyus-reason.png";
 import DesigningImage from "@/../public/designing-image.png";
+import DeploymentImage from "@/../public/deployment-image.png";
 
 const OurProcess = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -24,7 +25,7 @@ const OurProcess = () => {
     {
       id: 3,
       title: "Deployment",
-      image: WhyUsImage,
+      image: DeploymentImage,
       icon: "/services/app-dev.png",
     },
   ];

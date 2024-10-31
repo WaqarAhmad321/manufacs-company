@@ -7,10 +7,10 @@ import ServicesSection from "@/components/services-section";
 
 export default function Home() {
   return (
-    <>
+    <div className="overflow-hidden">
       <HeroSection />
 
-      <section className="pt-12 md:pb-24 md:pt-60">
+      <section className="pt-12 md:pb-24 md:pt-80">
         <Companies />
       </section>
 
@@ -29,6 +29,6 @@ export default function Home() {
       <section className="py-24">
         <ContactSection title="Get in Touch" />
       </section>
-    </>
+    </div>
   );
 }
