@@ -24,20 +24,29 @@ const Description: React.FC<DescriptionProps> = ({
       }`}
     >
       <div className="md:w-">
-        <Image src={image} alt={title} width={500} height={500} className="rounded-2xl mix-blend-multiply" />
+        <Image
+          src={image}
+          alt={title}
+          width={500}
+          height={500}
+          className="rounded-2xl mix-blend-multiply"
+          placeholder="blur"
+        />
       </div>
 
-      <div className="w-full ml-4 space-y-4 text-center md:w-1/2 md:text-left">
+      <div className="ml-4 w-full space-y-4 text-center md:w-1/2 md:text-left">
         <div className="space-y-2">
           <p className="font-lexend text-7xl font-bold text-brand-lightest opacity-50">
             #{id}
           </p>
-          <h4 className="font-lexend text-3xl md:text-4xl font-medium text-heading">
+          <h4 className="font-lexend text-3xl font-medium text-heading md:text-4xl">
             {title}
           </h4>
         </div>
 
-        <p className="font-manrope text-base md:text-lg text-heading">{description}</p>
+        <p className="font-manrope text-base text-heading md:text-lg">
+          {description}
+        </p>
       </div>
     </div>
   );

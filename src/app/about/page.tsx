@@ -58,7 +58,13 @@ const AboutPage = () => {
           </div>
 
           <div className="flex w-full justify-end md:w-1/2">
-            <Image src={WhoWeAre} alt="Who we are" width={500} height={500} />
+            <Image
+              src={WhoWeAre}
+              alt="Who we are"
+              width={500}
+              height={500}
+              placeholder="blur"
+            />
           </div>
         </div>
 

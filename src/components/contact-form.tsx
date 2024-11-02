@@ -12,7 +12,7 @@ const ContactForm = () => {
   const ref = useRef<HTMLFormElement>(null);
   const { pending } = useFormStatus();
   const [isSending, setIsSending] = useState(false);
-  console.log(pending);
+  
   return (
     <div className="rounded-2xl border-2 bg-white px-8 py-8 shadow-lg">
       <form

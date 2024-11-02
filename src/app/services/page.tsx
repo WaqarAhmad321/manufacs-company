@@ -64,11 +64,17 @@ const ServicesPage = () => {
         {services.map(({ id, description, image, title }, index) => (
           <div
             key={index}
-            className="h-ful flex flex-col justify-between space-y-8 rounded-xl border-2 border-white bg-[#f7f6fd] py-4 hover:shadow-2xl transition shadow-lg"
+            className="h-ful flex flex-col justify-between space-y-8 rounded-xl border-2 border-white bg-[#f7f6fd] py-4 shadow-lg transition hover:shadow-2xl"
           >
             <div className="relative space-y-12 px-4">
               <div className="absolute -top-12 rounded-md border-2 border-brand-dark bg-[#f7f6fd] p-4">
-                <Image src={image} alt={title} width={50} height={50} />
+                <Image
+                  src={image}
+                  alt={title}
+                  width={50}
+                  height={50}
+                  placeholder="blur"
+                />
               </div>
 
               <div>
