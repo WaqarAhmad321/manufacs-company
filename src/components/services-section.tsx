@@ -67,6 +67,7 @@ const ServicesSection = () => {
                 alt={title}
                 width={500}
                 height={500}
+                placeholder="blur"
                 className="object- rounded-2xl"
               />
             </div>
